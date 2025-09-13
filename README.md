@@ -21,7 +21,7 @@ ctf-writeups/
 ### TryHackMe
 | Challenge | Difficulty | Key Skills | Date |
 |-----------|------------|------------|------|
-| [Simple CTF](tryhackme/simple-ctf/) | Easy | SQL Injection, Privilege Escalation | Aug 2025 |
+| [Simple CTF](tryhackme/simple-ctf-writeup.md) | Easy | SQL Injection, Privilege Escalation | Aug 2025 |
 | [Challenge Name](link/) | Medium | XXX, | Coming Soon |
 
 ### HackTheBox
