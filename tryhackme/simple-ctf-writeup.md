@@ -111,9 +111,9 @@ Disallow: /openemr-5_0_1_3
 
 ```
 
-This suggests the existence of a hidden directory : /openemr-5_0_1_3 (It was already shown in the scan but I didn't notice it at first). But when I try to check out its contents, I get a 404 error. I still tried to search openemr on metasploit and run the potentially matching exploits, but none were conclusive so I will spare the details to the reader.
+This suggests the existence of a hidden directory : /openemr-5_0_1_3 (It was already shown in the scan but I didn't notice it at first). But when I try to check out its contents, I get a 404 error. I still tried to search openemr on metasploit and to run the potentially matching exploits, but none were conclusive so I will spare the details to the reader.
 
-My next idea is to try and see if i can use the ftp port. I saw online that some files could be accessible via a public "anonymous" account, so I tried to login this way and.. there was indeed an anonymous account :)
+My next idea is to try and see if I can use the ftp port. I saw online that some files could be accessible via a public "anonymous" account, so I tried to login this way and.. there was indeed an anonymous account :)
 
 ```bash
 ftp 10.10.50.154
@@ -179,8 +179,9 @@ This page is the default "CMS made simple" page, which is a tool for building an
 
 On exploit-db.com there is quite a few exploits for this software, but only one that matches this version : it is CVE-2019-9053, a SQL injection exploit.
 
-This finally allows us to answer the next question : 3. What's the CVE you're using against the application? CVE-2019-9053
-And the next one : 4. To what kind of vulnerability is the application vulnerable? SQLI (For SQL injection)
+This finally allows us to answer the next questions :
+3. What's the CVE you're using against the application? CVE-2019-9053
+4. To what kind of vulnerability is the application vulnerable? SQLI (For SQL injection)
 
 I downloaded the exploit from exploit-db and ran it with rockyou.txt as a wordlist and magic : We got some credentials :)
 
@@ -193,10 +194,12 @@ I downloaded the exploit from exploit-db and ran it with rockyou.txt as a wordli
 
 ```
 
-Moreover these are Mitch's credentials, and we found out earlier that Mitch tends to reuse his questionable password. 5. What's the password? secret
-And the most obvious thing to do now is to try and connect via ssh to the server using mitch's credentials. 6. Where can you login with the details obtained? ssh
+Moreover these are Mitch's credentials, and we found out earlier that Mitch tends to reuse his questionable password. 
+5. What's the password? secret
+And the most obvious thing to do now is to try and connect via ssh to the server using mitch's credentials. 
+6. Where can you login with the details obtained? ssh
 
-I am indeed able to connect via ssh :
+I am indeed able to connect via ssh, and the user flag is there :
 
 ```bash
 ssh mitch@10.10.168.38 -p 2222
@@ -225,7 +228,7 @@ G00d j0b, keep up!
 
 7. What's the user flag? G00d j0b, keep up!
 
-Just by running `bash cd ..`, we can also answer to question 8: 8. Is there any other user in the home directory? What's its name? sunbath (a bit peculiar but why not)
+Just by running ```bash cd ..```, we can also answer to question 8: 8. Is there any other user in the home directory? What's its name? sunbath (a bit peculiar but why not)
 
 ## Privilege Escalation
 
