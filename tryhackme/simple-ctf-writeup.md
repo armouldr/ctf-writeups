@@ -244,3 +244,6 @@ sudo vim -c ':!/bin/sh'
 The -c option makes the program run the following command after opening a file. Here we did not provide any file name, so I think that it just runs the command directly (with root permission !). And because the command is simply opening a new shell, we end up with root access !
 
 Root tag : W3ll d0n3. You made it!
+
+---
+[Arnaud Rajon]
