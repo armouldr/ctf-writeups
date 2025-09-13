@@ -6,6 +6,9 @@
 **Skills Used:** [Web exploitation, SQL injection, Privilege escalation]  
 **Tools Used:** [Nmap, Gobuster]
 
+## Executive Summary:
+Successfully compromised a Linux web server by exploiting a SQL injection vulnerability (CVE-2019-9053) in CMS Made Simple v2.2.8 to obtain user credentials, then escalated privileges through misconfigured sudo permissions. The attack chain involved FTP enumeration for reconnaissance hints, automated SQL injection to crack password hashes, SSH access with reused credentials, and privilege escalation via vim sudo access to achieve full system compromise.
+
 ## Initial Reconnaissance
 
 ### Port Scanning
