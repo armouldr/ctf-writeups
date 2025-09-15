@@ -6,16 +6,6 @@ Welcome to my collection of Capture The Flag (CTF) challenge writeups! This repo
 
 I'm a Computer Science student at EPFL, passionate about cybersecurity with a focus on offensive security. Through these challenges, I'm trying to build hands-on experience while developing the analytical and technical skills essential for a cybersecurity career.
 
-## Repository Structure
-
-```
-ctf-writeups/
-├── tryhackme/
-│   ├── simple-ctf/
-│   └── ...
-
-```
-
 ## Completed Challenges
 
 ### TryHackMe
