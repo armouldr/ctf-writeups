@@ -19,27 +19,31 @@ ctf-writeups/
 ## Completed Challenges
 
 ### TryHackMe
-| Challenge | Difficulty | Key Skills | Date |
-|-----------|------------|------------|------|
-| [Simple CTF](tryhackme/simple-ctf-writeup.md) | Easy | SQL Injection, Privilege Escalation | Aug 2025 |
-| [Challenge Name](link/) | Medium | XXX, | Coming Soon |
+
+| Challenge                                               | Difficulty | Key Skills                          | Date     |
+| ------------------------------------------------------- | ---------- | ----------------------------------- | -------- |
+| [Simple CTF](tryhackme/simple-ctf-writeup.md)           | Easy       | SQL Injection, Privilege Escalation | Aug 2025 |
+| [Bounty Hacker](tryhackme/bounty-hacker-ctf-writeup.md) | Easy       | Privilege Escalation                | Sep 2025 |
 
 ### HackTheBox
-| Machine | Difficulty | Key Skills | Date |
-|---------|------------|------------|------|
-| Coming Soon | - | - | - |
 
-*Repository actively updated as I complete new challenges*
+| Machine     | Difficulty | Key Skills | Date |
+| ----------- | ---------- | ---------- | ---- |
+| Coming Soon | -          | -          | -    |
+
+_Repository actively updated as I complete new challenges_
 
 ## Skills & Tools Demonstrated
 
 ### Technical Skills
+
 - **Web Application Security**: SQL injection, directory traversal
 - **Network Security**: Port scanning, service enumeration, vulnerability assessment
 - **Privilege Escalation**: Linux privilege escalation techniques
 - **Cryptography**: Hash cracking, encoding/decoding
 
 ### Tools & Technologies
+
 - **Reconnaissance**: Nmap, Gobuster
 - **Exploitation**: Metasploit
 - **Post-Exploitation**: GTFOBins
@@ -47,6 +51,7 @@ ctf-writeups/
 ## Writeup Format
 
 Each writeup follows a consistent structure:
+
 - **Executive Summary**: High-level overview of the attack chain
 - **Reconnaissance**: Information gathering and enumeration
 - **Vulnerability Analysis**: Identified security flaws
@@ -56,6 +61,7 @@ Each writeup follows a consistent structure:
 ## Learning Objectives
 
 Through these challenges, I'm developing:
+
 - **Technical Proficiency**: Hands-on experience with cybersecurity tools and techniques
 - **Analytical Thinking**: Systematic approach to vulnerability assessment
 - **Documentation Skills**: Clear technical communication for diverse audiences

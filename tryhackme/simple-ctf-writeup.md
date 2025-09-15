@@ -6,7 +6,8 @@
 **Skills Used:** [Web exploitation, SQL injection, Privilege escalation]  
 **Tools Used:** [Nmap, Gobuster]
 
-## Executive Summary:
+## Executive Summary
+
 Successfully compromised a Linux web server by exploiting a SQL injection vulnerability (CVE-2019-9053) in CMS Made Simple v2.2.8 to obtain user credentials, then escalated privileges through misconfigured sudo permissions. The attack chain involved FTP enumeration for reconnaissance hints, automated SQL injection to crack password hashes, SSH access with reused credentials, and privilege escalation via vim sudo access to achieve full system compromise.
 
 ## Initial Reconnaissance
@@ -184,7 +185,7 @@ On exploit-db.com there is quite a few exploits for this software, but only one 
 
 This finally allows us to answer the next questions :  
 3. What's the CVE you're using against the application? CVE-2019-9053  
-4. To what kind of vulnerability is the application vulnerable? SQLI (For SQL injection)  
+4. To what kind of vulnerability is the application vulnerable? SQLI (For SQL injection)
 
 I downloaded the exploit from exploit-db and ran it with rockyou.txt as a wordlist and magic : We got some credentials :)
 
@@ -199,8 +200,8 @@ I downloaded the exploit from exploit-db and ran it with rockyou.txt as a wordli
 
 Moreover these are Mitch's credentials, and we found out earlier that Mitch tends to reuse his questionable password.  
 5. What's the password? secret  
-And the most obvious thing to do now is to try and connect via ssh to the server using mitch's credentials.   
-6. Where can you login with the details obtained? ssh  
+And the most obvious thing to do now is to try and connect via ssh to the server using mitch's credentials.  
+6. Where can you login with the details obtained? ssh
 
 I am indeed able to connect via ssh, and the user flag is there :
 
@@ -229,9 +230,9 @@ $ cat user.txt
 G00d j0b, keep up!
 ```
 
-7. What's the user flag? G00d j0b, keep up!  
+7. What's the user flag? G00d j0b, keep up!
 
-Just by running ```bash cd ..```, we can also answer to question 8: 8. Is there any other user in the home directory? What's its name? sunbath (a bit peculiar but why not)
+Just by running `bash cd ..`, we can also answer to question 8: 8. Is there any other user in the home directory? What's its name? sunbath (a bit peculiar but why not)
 
 ## Privilege Escalation
 
@@ -246,4 +247,5 @@ The -c option makes the program run the following command after opening a file. 
 Root tag : W3ll d0n3. You made it!
 
 ---
+
 [Arnaud Rajon]
