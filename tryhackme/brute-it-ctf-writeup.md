@@ -142,7 +142,8 @@ We are in ! And the user flag is : THM{a_password_is_not_a_barrier}
 
 ## Privilege Escalation
 
-By using sudo -l, we can see that john is authorised to execute /sys/cat with admin privileges. This makes us able to read /etc/shadow (which should only be accessible to root) and get the hash of the root password : root:$6$zdk0.jUm$ Vya24cGzM1duJkwM5b17Q205xDJ47LOAg/OpZvJ1gKbLF8PJBdKJA4a6M.JYPUTAaWu4infDjI88U9yUXEVgL.
+By using sudo -l, we can see that john is authorised to execute /sys/cat with admin privileges. This makes us able to read /etc/shadow (which should only be accessible to root) and get the hash of the root password :  
+root:$6$zdk0.jUm$ Vya24cGzM1duJkwM5b17Q205xDJ47LOAg/OpZvJ1gKbLF8PJBdKJA4a6M.JYPUTAaWu4infDjI88U9yUXEVgL.
 
 Passwords in /etc/shadow have this structure :$hash_algo$salt$hash. In our case, $6$ means that our hash was made with SHA-512. I copied the hash in a text file named roothash.
 
