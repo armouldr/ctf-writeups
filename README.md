@@ -10,10 +10,11 @@ I'm a Computer Science student at EPFL, passionate about cybersecurity with a fo
 
 ### TryHackMe
 
-| Challenge                                               | Difficulty | Key Skills                          | Date     |
-| ------------------------------------------------------- | ---------- | ----------------------------------- | -------- |
-| [Simple CTF](tryhackme/simple-ctf-writeup.md)           | Easy       | SQL Injection, Privilege Escalation | Aug 2025 |
-| [Bounty Hacker](tryhackme/bounty-hacker-ctf-writeup.md) | Easy       | Privilege Escalation                | Sep 2025 |
+| Challenge                                               | Difficulty | Key Skills                              | Date     |
+| ------------------------------------------------------- | ---------- | --------------------------------------- | -------- |
+| [Simple CTF](tryhackme/simple-ctf-writeup.md)           | Easy       | SQL Injection, Privilege Escalation     | Aug 2025 |
+| [Bounty Hacker](tryhackme/bounty-hacker-ctf-writeup.md) | Easy       | Privilege Escalation                    | Sep 2025 |
+| [Brute it](tryhackme/brute-it-ctf-writeup.md)           | Easy       | Password cracking, Privilege Escalation | Sep 2025 |
 
 ### HackTheBox
 
@@ -35,7 +36,7 @@ _Repository actively updated as I complete new challenges_
 ### Tools & Technologies
 
 - **Reconnaissance**: Nmap, Gobuster
-- **Exploitation**: Metasploit
+- **Exploitation**: Metasploit, Hydra, John the ripper
 - **Post-Exploitation**: GTFOBins
 
 ## Writeup Format
@@ -63,4 +64,4 @@ Through these challenges, I'm developing:
 
 ---
 
-**Last Updated**: [13.09.2025]
+**Last Updated**: [22.09.2025]
