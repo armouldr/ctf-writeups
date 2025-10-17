@@ -1,10 +1,10 @@
 # [Bounty Hacker CTF] - Writeup
 
-**Platform:** TryHackMe
-**Difficulty:** Easy
-**Date Completed:** [15.10.2025]  
-**Skills Used:** [Password cracking, Steganography]  
-**Tools Used:** [Hydra, John the ripper, steghide]
+**Platform:** TryHackMe    
+**Difficulty:** Easy    
+**Date Completed:** [15.10.2025]    
+**Skills Used:** [Password cracking, Steganography]    
+**Tools Used:** [Hydra, John the ripper, steghide]    
 
 ## Executive Summary
 
